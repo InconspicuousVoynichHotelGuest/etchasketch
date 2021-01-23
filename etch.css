@@ -1,16 +1,22 @@
+:root {
+    --gridlength: 16;
+}
+
+
 .container {
     display: grid;
-    grid-template-columns: repeat(16,1fr);
-    grid-template-rows: repeat(16,1fr);
+    grid-template-columns: repeat(var(--gridlength),1fr);
+    grid-template-rows: repeat(var(--gridlength),1fr);
     border: 1px solid black;
     width: 500px;
     height: 500px;
     margin: auto;
 }
 
-.flexelement {
-}
-
 .colourchanger {
     background-color: blue;
+}
+
+.button-container {
+    text-align: center;
 }
